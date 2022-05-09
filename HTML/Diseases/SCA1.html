@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PolyQ - SCA1</title>
+  <link rel="stylesheet" href="../../CSS/DiseasePages/sca1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  <header>
+    <a href=""><img class="abcri-logo" src="../../Images/Logo_ABCRI.png"></a>
+    <a><img class="mngt-logo" src="../../Images/Logo_MNGT.png"></a>
+    <h1> <strong>A ABC Research Institute polyglutamine disease database</strong></h1>
+  </header>
+  <main>
+    <h1> SCA1 page</h1>
+    <div class="side-table">
+      <a class="click-button" id="toc-toggle" onclick="toggle();"> Table of contents </a>
+      <div class="table-of-contents" id="index-points">
+        <ul>
+          <li><a href="#intro">1. Introduction</a></li>
+          <li><a href="#first">2. First described</a></li>
+          <li><a href="#epidemiology">3. Epidemiology</a></li>
+          <li><a href="#gene">4. Gene affected</a></li>
+          <li><a href="#protein">5. Coded protein</a></li>
+          <li><a href="#patho"> 6. Pathophysiology</a></li>
+          <li><a href="#clinical">7. Clinical Manifestations</a></li>
+        </ul>
+      </div>
+    </div>
+    <h2> Introduction</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam pariatur, dignissimos minus. Esse facilis, iusto adipisci sapiente vel maxime eos, voluptate numquam laborum nostrum incidunt corporis molestias harum consequatur. Placeat.
+    </p>
+  </main>
+</body>
+<script type="text/javascript">
+
+
+var btn = document.getElementById("toc-toggle");
+var contents = document.getElementById('index-points');
+/*-210px ol hidden
+-58 initial position button
+130 btn*/
+
+function toggle(){
+  if (contents.style.right < "0"){
+    ((contents.style.right = "0") && (btn.style.right = "150px"));
+  } else{
+    ((contents.style.right = "-230px") && (btn.style.right = "-58px"));
+  }
+};
+
+</script>
+</html>

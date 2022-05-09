@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  position: relative;
+  font-family: 'Merriweather', serif;
+  overflow: auto;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+header{
+  position: relative;
+  background-color: #fff;
+  height: 120px;
+}
+
+header h1{
+  font-family: verdana, sans-serif;
+  letter-spacing: 2px;
+  position: absolute;
+  max-width: 1200px;
+  top: 10px;
+  right: 30px;
+  border-radius: 1px;
+  padding: 20px;
+  text-align: center;
+  color: #000;
+  font-size: 2em;
+  box-shadow: 10px 10px #F2C20E;
+  z-index: 4;
+}
+
+.abcri-logo{
+  width: 190px;
+  height: 110px;
+  margin: 5px;
+}
+
+.mngt-logo{
+  width: 260px;
+  height: 110px;
+  margin: 5px 40px;
+}
+
+
+aside ul{
+  list-style: none;
+  position: fixed;
+  height: auto;
+  width: auto;
+  right: 0;
+  text-align: left;
+  background: white;
+	border: 1px solid rgba(0,0,0,0.05);
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+	border-radius: 5px;
+}
+
+aside ul li{
+  margin: 5px;
+  padding: 10px;
+}
+
+aside ul li a{
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+}
+
+.active, .link-btn:hover{
+  border-left: 3px solid yellow;
+  font-weight: bold;
+}
+
+
+#intro, #first, #epidemiology, #gene{
+  width: 60%;
+  height: 100vh;
+  background: grey;
+	float: left;
+	margin-left: 20%;
+}

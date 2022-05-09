@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PolyQ - SBMA</title>
+  <link rel="stylesheet" href="../../CSS/DiseasePages/sbma.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  <header>
+    <a href=""><img class="abcri-logo" src="../../Images/Logo_ABCRI.png"></a>
+    <a><img class="mngt-logo" src="../../Images/Logo_MNGT.png"></a>
+    <h1> <strong>A ABC Research Institute polyglutamine disease database</strong></h1>
+  </header>
+  <main>
+    <h1> SBMA page</h1>
+    <aside id="sideTable">
+        <ul>
+          <li><a href="#intro" class="link-btn active">Introduction</a></li>  
+          <li><a href="#first" class="link-btn">First described</a></li>
+          <li><a href="#epidemiology" class="link-btn">Epidemiology</a></li>
+          </li>
+          <li><a href="#gene" class="link-btn">Gene affected</a></li>
+          <li><a href="#protein" class="link-btn">Coded protein</a></li>
+          <li><a href="#patho" class="link-btn">Pathophysiology</a></li>
+          <li><a href="#clinical" class="link-btn">Clinical Manifestations</a></li>
+        </ul>
+      </aside>
+    <section id="intro">
+      <h2> Introduction</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam pariatur, dignissimos minus. Esse facilis, iusto adipisci sapiente vel maxime eos, voluptate numquam laborum nostrum incidunt corporis molestias harum consequatur. Placeat.
+      </p>
+    </section>
+    <section id="first">
+      <h2> First described</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam pariatur, dignissimos minus. Esse facilis, iusto adipisci sapiente vel maxime eos, voluptate numquam laborum nostrum incidunt corporis molestias harum consequatur. Placeat.
+      </p>
+    </section>
+    <section id="epidemiology">
+      <h2> Epidemiology</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam pariatur, dignissimos minus. Esse facilis, iusto adipisci sapiente vel maxime eos, voluptate numquam laborum nostrum incidunt corporis molestias harum consequatur. Placeat.
+      </p>
+    </section>
+    <section id="gene">
+      <h2> Gene</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam pariatur, dignissimos minus. Esse facilis, iusto adipisci sapiente vel maxime eos, voluptate numquam laborum nostrum incidunt corporis molestias harum consequatur. Placeat.
+      </p>
+    </section>
+  </main>
+</body>
+<script>
+var table = document.getElementById("sideTable");
+var btns = document.getElementsByClassName("link-btn");
+
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+      }
+</script>
+</html>
