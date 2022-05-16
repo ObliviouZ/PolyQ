@@ -258,7 +258,7 @@ main {
 	padding: 10px 30px;
 	margin-bottom: 50px;
 	cursor: pointer;
-	width: 50%;
+	width: 80%;
 }
 
 .text h1 a{
@@ -352,6 +352,8 @@ input[type=checkbox]:checked ~ label > img {
 
 
 /* ---------------------- SPAN CONTROL REFS FOR BIG AND SMALL SCREENS -----------------*/
+
+
 
 .reflittle{
 	display: none;
@@ -705,7 +707,7 @@ nav .return-little:hover{
 }
 
 .aside-bar-right{
-	display: none;
+	display: none !important;
 }
 
 .text{
@@ -880,7 +882,7 @@ footer .logos .logo-three img{
 	}
 
 	.aside-bar-right{
-		display: none;
+		display: none !important;
 	}
 
 	.text{
@@ -993,8 +995,12 @@ footer .logos .logo-three img{
 		height: auto;
 	}
 
+	.text{
+		width: 70%;
+	}
+
 	.aside-bar-right{
-		display: none;
+		display: none !important;
 	}
 
 	.refbig{
@@ -1002,7 +1008,8 @@ footer .logos .logo-three img{
 	}
 
 	.reflittle{
-		display: block;
+		display: inline-block;
+
 	}
 }
 
