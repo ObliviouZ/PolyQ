@@ -12,7 +12,6 @@ html{
 body{
   position: relative;
   font-family: 'Merriweather', serif;
-  overflow: auto;
 }
 
 /* -------------------------------- HEADER AND NAV BARS ------------------- */
@@ -411,9 +410,9 @@ input[type=checkbox]:checked ~ label > img {
 }
 
 .aside-bar-right{
-	position: sticky;
-	left: 100%;
-	top: 15%;
+	position: fixed;
+	right: 0;
+	top: 250px;
 	/* bottom: 38%; */
 	height: 570px;
 	width: 20vw;
@@ -422,8 +421,6 @@ input[type=checkbox]:checked ~ label > img {
 	box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
 	border-radius: 3px;
 	z-index: 1;
-	margin-bottom: 50px;
-	margin-top: 50px;
 	padding-left: 25px;
 }
 
@@ -436,18 +433,44 @@ input[type=checkbox]:checked ~ label > img {
 	list-style-type: none;
 	height: 500px;
 	overflow-y: scroll;
+	scroll-behavior: smooth;
 }
 
-.aside-bar-right ul li{
+.aside-bar-right ul::-webkit-scrollbar{
+    width: 10px;
+}
+
+.aside-bar-right ul::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(224, 227, 229, 1);
+}
+
+.aside-bar-right ul::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #F2C20E;
+}
+
+.aside-bar-right ul::-webkit-scrollbar-thumb:window-inactive {
+    background: #F2C20E;
+}
+
+
+.aside-bar-right ul li {
 		padding: 10px;
 		border-bottom: 1px solid #000;
 		margin-top: 10px;
+		cursor: text;
 	}
+
+
 
 .aside-bar-right ul li .articlefocus{
 	text-decoration: none;
 	color: #000;
-	cursor: default;
+	pointer-events: none;
+	transition: all 0.5s;
 }
 
 .aside-bar-right ul li .links{
@@ -456,6 +479,7 @@ input[type=checkbox]:checked ~ label > img {
 
 .aside-bar-right ul li .articlefocus:focus{
 	background-color: yellow;
+	transition: all 0.5s;
 }
 
 footer{
@@ -463,6 +487,7 @@ footer{
   bottom:0;
   width:100%;
   background-color: #e9e9e9;
+	z-index: 2;
 }
 
 footer .collumns{
