@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>PolyQ - SBMA</title>
+  <title>PolyQ - SCA7</title>
   <link rel="shortcut icon" href="../../Images/image1.ico">
   <link rel="stylesheet" href="../../CSS/DiseasePages/hd.css">
   <link rel="stylesheet" href="highlight-js/highlightjs.css">
@@ -25,15 +25,15 @@
     <ul>
       <li><a href="Huntington.html">HD</a></li>
       <li><a href="DRPLA.html">DRPLA</a></li>
-      <li><a href="SCA1.html">SCA1</a></li>
+      <li><a href="SBMA.html">SBMA</a></li>
     </ul>
       <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">More <i class="fa-solid fa-caret-down"></i></button>
         <div class="dropdown-content" id="myDropdown">
+          <a href="SCA1.html">SCA1</a>
           <a href="SCA2.html">SCA2</a>
           <a href="SCA3.html">SCA3</a>
           <a href="SCA6.html">SCA6</a>
-          <a href="SCA7.html">SCA7</a>
           <a href="SCA17.html">SCA17</a>
         </div>
       </div>
@@ -42,11 +42,11 @@
         <div class="dropdown-content-little" id="myDropdownLittle">
           <a href="Huntington.html">HD</a>
           <a href="DRPLA.html">DRPLA</a>
+          <a href="SBMA.html">SBMA</a>
           <a href="SCA1.html">SCA1</a>
           <a href="SCA2.html">SCA2</a>
           <a href="SCA3.html">SCA3</a>
           <a href="SCA6.html">SCA6</a>
-          <a href="SCA7.html">SCA7</a>
           <a href="SCA17.html">SCA17</a>
         </div>
       </div>
@@ -59,7 +59,7 @@
       <div id="indicator"></div>
     </div>
     <div class="text">
-    <h1><a href="SBMA.html"><i class="fa-solid fa-caret-right"></i> &nbspSpinal Bulbar-Muscular Atrophy</a></h1>
+    <h1><a href="SCA7.html"><i class="fa-solid fa-caret-right"></i> &nbspSpinocerebellar Ataxia 7</a></h1>
     <section class="scrollspy" spy-title="Introduction">
       <div class="intro-section">
         <h2> Introduction </h2>
@@ -276,15 +276,16 @@ window.onclick = function(event) {
 </script>
 <script>
 
+
 $(document).scroll(function() {
     checkOffset();
 });
 
 function checkOffset() {
     if($('#bar-right').offset().top + $('#bar-right').height() >= $('#references').offset().top + 200)
-        $('#bar-right').hide(800);
+          $('#bar-right').hide(800);
     if($(document).scrollTop() + window.innerHeight < $('#references').offset().top + 200)
-        $('#bar-right').show(800); // restore when you scroll up
+          $('#bar-right').show(800); // restore when you scroll up
 }
 </script>
 

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>PolyQ - Huntington's Disease</title>
+  <link rel="shortcut icon" href="../../Images/image1.ico">
   <link rel="stylesheet" href="../../CSS/DiseasePages/hd.css">
   <link rel="stylesheet" href="highlight-js/highlightjs.css">
   <link rel="stylesheet" href="ScrollSpy.css">
@@ -86,7 +87,7 @@
         </p>
         <input type="checkbox" id="zoomCheck">
         <label for="zoomCheck">
-          <img src="../../Images/original images/HD/HD_epi-new.png">
+          <img type="img" src="../../Images/original images/HD/HD_epi-new.png">
         </label>
         <figcaption> Fig. # Huntington epidemiologic features</figcaption>
         <a class="download-image" href="../../Images/original images/HD/HD_epi-new.png" download> Fullsize image </a>
@@ -98,6 +99,16 @@
           <p>
             Lorem ipsum dolor sit amet<span class="refbig"><a href="#ref-two">[2]</a></span><span class="reflittle"><a href="#ref-two-little">[2]</a></span>, consectetur adipisicing elit. Ullam error, voluptatum inventore in ipsum repellendus sequi quis possimus soluta rem quae assumenda vitae, temporibus odio ipsam praesentium sapiente eius magnam.
           </p>
+          <div>
+            <img src="../../Images/original images/HD/HTT.png" title="HTT gene">
+            <figcaption> Fig. # Huntingtin gene</figcaption>
+            <a class="download-image" href="../../Images/original images/HD/HTT.png" download> Fullsize image </a>
+          </div>
+          <div>
+            <img src="../../Images/original images/HD/chromosome.png" title="HTT gene chromosomal location">
+            <figcaption> Fig. # Huntingtin gene chromossomal localization</figcaption>
+            <a class="download-image" href="../../Images/original images/HD/chromosome.png" download> Fullsize image </a>
+          </div>
         </div>
     </section>
     <section class="scrollspy" spy-title="Coded Protein">
@@ -106,6 +117,11 @@
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam error, voluptatum inventore in ipsum repellendus sequi quis possimus soluta rem quae assumenda vitae, temporibus odio ipsam praesentium sapiente eius magnam.
         </p>
+        <div class="non-interactive">
+          <img src="../../Images/original images/HD/HTT_protein.png" title="Huntingtin structure">
+          <figcaption> Fig. # Huntingtin</figcaption>
+          <a class="download-image" href="../../Images/original images/HD/HTT_protein.png" download> Fullsize image </a>
+        </div>
         <div class="interactive-image" id="my-interactive-image">
           <img src="../../Images/cell-scheme.jpg" />
           <figcaption> Fig.# Huntingtin protein localization</figcaption>
@@ -119,8 +135,11 @@
       <div class="patho-section">
         <h2> Pathophysiology</h2>
         <p>
-          Lorem ipsum dolor sit amet<span class="refbig"><a href="#ref-eight">[3]</a></span><span class="reflittle"><a href="#ref-eight-little">[1]</a></span>, consectetur adipisicing elit. Ullam error, voluptatum inventore in ipsum repellendus sequi quis possimus soluta rem quae assumenda vitae, temporibus odio ipsam praesentium sapiente eius magnam.
+          Lorem ipsum dolor sit amet<span class="refbig"><a href="#ref-eight">[8]</a></span><span class="reflittle"><a href="#ref-eight-little">[8]</a></span>, consectetur adipisicing elit. Ullam error, voluptatum inventore in ipsum repellendus sequi quis possimus soluta rem quae assumenda vitae, temporibus odio ipsam praesentium sapiente eius magnam.
         </p>
+          <img src="../../Images/original images/HD/HD_patho.png" title="Huntington pathogenic mechanisms">
+          <figcaption> Fig. # Huntington pathogenesis</figcaption>
+        <a class="download-image" href="../../Images/original images/HD/HD_patho.png" download> Fullsize image </a>
       </div>
     </section>
     <section class="scrollspy" spy-title="Clinical Manifestations">
@@ -144,7 +163,7 @@
           <li></li>
           <li></li>
           <li></li>
-          <li></li>
+          <li><a id="ref-eight-little" class="articlebottom"> </a></li>
         </ol>
       </div>
     </section>
@@ -275,15 +294,16 @@ window.onclick = function(event) {
 </script>
 <script>
 
+
 $(document).scroll(function() {
     checkOffset();
 });
 
 function checkOffset() {
     if($('#bar-right').offset().top + $('#bar-right').height() >= $('#references').offset().top + 200)
-        $('#bar-right').hide(800);
+          $('#bar-right').hide(800);
     if($(document).scrollTop() + window.innerHeight < $('#references').offset().top + 200)
-        $('#bar-right').show(800); // restore when you scroll up
+          $('#bar-right').show(800); // restore when you scroll up
 }
 </script>
 
