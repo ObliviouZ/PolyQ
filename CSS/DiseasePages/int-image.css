@@ -16,7 +16,7 @@
     text-align: center;
 }
 .interactive-image .unsupported-screen:before {
-    content: "Please rotate your device."}
+    content: "Please rotate your device and refresh"}
 @media screen and (max-width:399px) {
     .interactive-image{
     background-image: none;
