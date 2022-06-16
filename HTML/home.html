@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Polyglutamine Diseases - Home</title>
-    <link rel="shortcut icon" href="../Images/image1.ico">
-    <link rel="stylesheet" href="../CSS/styles_home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="../Images/image1.ico"/>
+    <link rel="stylesheet" href="../CSS/home_new.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
   </head>
     <body>
       <header>
@@ -18,21 +21,21 @@
         <nav>
             <img class="poly-logo" src="../Images/logo-plyq.png">
           <div class="autocomplete">
-            <input type="text" name="myDisease" class="search-box" placeholder="Disease Search..." size="40" id="myInput" autocomplete="off">
+            <input type="text" name="myDisease" class="search-box" placeholder="Disease search..." size="40" id="myInput" autocomplete="off">
             <button type="submit" name="button" class="search-button" id="myButton"><i class="fas fa-search"></i></button>
           </div>
           <div class="search-info">
-            <div class="hover-elem"><p> Need help searching? Hover me. <i class="fas fa-hand-pointer"></i></p></div>
+            <div class="hover-elem"><p>Need help searching?</p></div>
             <div class="hover-info"><p>
               <span>Search-help:</span><br>
-              <br><i class="far fa-hand-point-right"></i>&nbsp Start typing the disease name and recommendations show up.<br>
-              <br><i class="far fa-hand-point-right"></i>&nbsp Any abbreviations such as SCA1, SCA17, DRPLA, SBMA will also work.<br>
-              <br><i class="far fa-hand-point-right"></i>&nbsp On enter click, the home page will be redirected to the disease page. The same will happen if the search button is clicked.
+              <br>&nbsp Start typing the disease name and recommendations show up.<br>
+              <br>&nbsp Any abbreviations such as SCA1, SCA17, DRPLA, SBMA will also work.<br>
+              <br>&nbsp On enter click, the home page will be redirected to the disease page. The same will happen if the search button is clicked.
             </p></div>
           </div>
         </nav>
         <main>
-        <h1> Welcome to PolyQ Database!</h1>
+        <h1> PolyQ Database</h1>
         <h4> A website with information regarding the 9 polyglutamine diseases documented so far.</h4>
         <div class="container">
           <div class="img-slider">
@@ -113,50 +116,168 @@
             </div>
           </div>
           <div class="side-text">
-              <h2> Website information</h2>
+              <h2> Website briefing</h2>
               <ul>
-                <li>This is a work done by the Algarve Biomedical Center Research Institute. </li>
-                <li>PolyQ Database is a project proposed and executed by the laboratory of Molecular Neuroscience and Gene Theraphy. </li>
                 <li>There are 9 polyglutamine diseases: Huntington's, SBMA, DRPLA, SCA1, SCA2, SCA3, SCA6, SCA7 and SCA17.</li>
-                <li>Information on the 9 known polyglutamine diseases. From brief disease introductions to molecular and biological mechanisms. </li>
-                <li>Each disease has the same information topics.</li>
+                <li>From brief disease introductions to molecular and biological mechanisms. Here we present various information about every polyglutmine disease to a certain extent.</li>
+                <li>Each disease will have the following topics: Introduction, first described cases, epidemiology, causative gene, various information regarding the codified protein, pathophysiology (pathogenic mechanisms) and a clinical manifestations section which will include neuropathology, signs and symptoms.  </li>
               </ul>
           </div>
         </div>
-        <div class="container-grid">
-          <h5> All 9 diseases will have the following topics presented:</h5>
-          <div class="container-grid-rowone">
-            <div class="grid-image-one">
-              <img src="../Images/intro-grid.jpg" alt="">
-                <p> Introduction </p>
+        <div class="horizontal-slider" data-aos="fade-up" data-aos-offset="300" data-aos-duration="800" id="horizontal-slider">
+          <h6>Polyglutamine Diseases</h6>
+          <h2>Use search bar or click directly on your disease of interest</h2>
+
+          <div class="slider-container" id="slider-horizontal">
+            <div class="my_item" onclick="window.location='Diseases/Huntington.html';">
+              <div class="card-container">
+              <div class="front-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  Huntington's Disease
+                </p>
+              </div>
+              <div class="back-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  Go to Huntington's Disease Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                </p>
+              </div>
+              </div>
             </div>
-            <div class="grid-image-two">
-              <img src="../Images/first-described.jpg" alt="">
-                <p> First described</p>
+            <div class="my_item" onclick="window.location='Diseases/DRPLA.html';">
+              <div class="card-container">
+              <div class="front-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  DRPLA
+                </p>
+              </div>
+              <div class="back-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  Go to DRPLA Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                </p>
+              </div>
+              </div>
             </div>
-            <div class="grid-image-three">
-              <img src="../Images/epidemiology.jpg" alt="">
-                <p>Epidemiology</p>
+            <div class="my_item" onclick="window.location='Diseases/SBMA.html';">
+              <div class="card-container">
+              <div class="front-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  SBMA
+                </p>
+              </div>
+              <div class="back-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  Go to SBMA Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                </p>
+              </div>
+              </div>
             </div>
-            <div class="grid-image-four">
-              <img src="../Images/gene-grid.jpg" alt="">
-                <p>Gene affected</p>
+            <div class="my_item" onclick="window.location='Diseases/SCA1.html';">
+              <div class="card-container">
+              <div class="front-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  SCA1
+                </p>
+              </div>
+              <div class="back-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  Go to SCA1 Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                </p>
+              </div>
+              </div>
+            </div>
+            <div class="my_item" onclick="window.location='Diseases/SCA2.html';">
+              <div class="card-container">
+              <div class="front-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  SCA2
+                </p>
+              </div>
+              <div class="back-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  Go to SCA2 Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                </p>
+              </div>
+              </div>
+            </div>
+            <div class="my_item" onclick="window.location='Diseases/SCA3.html';">
+              <div class="card-container">
+              <div class="front-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  SCA3
+                </p>
+              </div>
+              <div class="back-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  Go to SCA3 Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                </p>
+              </div>
+              </div>
+            </div>
+            <div class="my_item" onclick="window.location='Diseases/SCA6.html';">
+              <div class="card-container">
+              <div class="front-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  SCA6
+                </p>
+              </div>
+              <div class="back-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  Go to SCA6 Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                </p>
+              </div>
+              </div>
+            </div>
+            <div class="my_item" onclick="window.location='Diseases/SCA7.html';">
+              <div class="card-container">
+              <div class="front-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  SCA7
+                </p>
+              </div>
+              <div class="back-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  Go to SCA7 Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                </p>
+              </div>
+              </div>
+            </div>
+            <div class="my_item" onclick="window.location='Diseases/SCA17.html';">
+              <div class="card-container">
+              <div class="front-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  SCA17
+                </p>
+              </div>
+              <div class="back-face">
+                <img src="../Images/biology-dna.jpg" />
+                <p>
+                  Go to SCA17 Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                </p>
+              </div>
+              </div>
             </div>
           </div>
-          <div class="container-grid-rowtwo">
-            <div class="grid-image-five">
-              <img src="../Images/protein-grid.png" alt="">
-              <p>Coded protein: <br>normal function, structure<br> and localization</p>
-            </div>
-            <div class="grid-image-six">
-              <img src="../Images/protein-grid-new.jpg" alt="">
-                <p>Pathophysiology</p>
-            </div>
-            <div class="grid-image-seven">
-              <img src="../Images/clinical-grid.jpg" alt="">
-                <p>Clinical Manifestations:<br> Neuropathology, others signs<br> and symptoms</p>
-            </div>
-          </div>
+            <button id="left-btn" onclick="scrollHorizontally(1)"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="right-btn" onclick="scrollHorizontally(-1)"><i class="fa-solid fa-angle-right"></i></button>
+            <button id="left-all-btn" onclick="scrollHorizontally(1)"><i class="fa-solid fa-angles-left"></i></button>
+            <button id="right-all-btn" onclick="scrollHorizontally(-1)"><i class="fa-solid fa-angles-right"></i></button>
         </div>
       </main>
     <footer>
@@ -215,9 +336,42 @@ Created by potrace 1.10, written by Peter Selinger 2001-2011
       </div>
     </footer>
     </body>
+  <script src="../Scripts/jquery-3.6.0.min.js"></script>
   <script src="../Scripts/autocomplete.js"></script>
   <script src="../Scripts/search-button.js"></script>
-  <!--<script src="../Scripts/slide.js"></script> -->
   <script src="../Scripts/new-slide.js"></script>
+  <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+   <script>
+
+     var btnLeft = document.getElementById('left-btn');
+     var btnRight = document.getElementById('right-btn');
+     var btnAllLeft = document.getElementById('left-all-btn');
+     var btnAllRight = document.getElementById('right-all-btn');
+
+
+
+     btnRight.onclick = function() {
+        document.getElementById('slider-horizontal').scrollLeft += 400;
+          };
+
+      btnLeft.onclick = function() {
+        document.getElementById('slider-horizontal').scrollLeft -= 400;
+          };
+
+      btnAllRight.onclick = function() {
+         document.getElementById('slider-horizontal').scrollLeft += 2400;
+           };
+
+     btnAllLeft.onclick = function() {
+        document.getElementById('slider-horizontal').scrollLeft -= 2400;
+          };
+
+
+   </script>
+
 
 </html>

@@ -25,27 +25,30 @@
     </header>
     <nav>
       <a href=""> <img class="poly-q" src="../Images/logo-plyq.png"> </a>
-        <h1> Contact Page</h1>
-        <a href="home.html" class="return-button"><i class="fa-solid fa-house"></i> Return to Home page </a>
-        <a href="home.html" class="return-little"><i class="fa-solid fa-house"></i> Home </a>
+      <ul>
+        <li><a href="../index.html" class="return-button"><i class="fa-solid fa-house"></i> Return to Landing Page </a></li>
+        <li><a href="../index.html" class="return-little"><i class="fa-solid fa-house"></i> Landing Page </a></li>
+        <li><a href="home.html" class="return-button"><i class="fa-solid fa-house"></i> Return to Home page </a></li>
+        <li><a href="home.html" class="return-little"><i class="fa-solid fa-house"></i> Home </a></li>
+      </ul>
     </nav>
   <main>
+    <h1> Contact Us</h1>
     <div class="contact-section">
       <div class="contact-info">
-        <div> <i class="fas fa-map-marker-alt"></i><a class="link-map" href="https://www.google.com/maps/place/FMCB+-+Faculdade+de+Medicina+e+Ci%C3%AAncias+Biom%C3%A9dicas/@37.0432312,-7.9719514,17.5z/data=!4m8!1m2!2m1!1sualg+campus+de+gambelas!3m4!1s0x0:0x16208f00e7acab03!8m2!3d37.0450599!4d-7.9709448">8005-139 Faro, Gambelas, Portugal</a> </div>
-        <div> <i class="fas fa-envelope"></i>Contact directly via mail:  </div>
-        <div> &nbsp&nbsp&nbsp&nbsp<a href="mailto:poly@mail.com"><i class="fa-solid fa-paper-plane"></i>poly@mail.com </a> </div>
-        <div> <i class="fa-solid fa-user"></i>Social Media:</div>
-        <div> <i class="fa-brands fa-facebook-square"></i><i class="fa-brands fa-twitter-square"></i><i class="fa-brands fa-linkedin"></i></div>
+        <div> <p><i class="fas fa-envelope"></i>  Contact directly via mail:  </p></div>
+        <ul>
+          <li><a href="mailto:poly@mail.com"> poly@mail.com </a></li>
+          <li><a href="mailto:poly@mail.com"> poly@mail.com </a></li>
+          <li><a href="mailto:poly@mail.com"> poly@mail.com </a></li>
+        </ul>
+        <div> <i class="fa-solid fa-user"></i> Available social links:</div>
+        <div class="logos"> <a href=""><i class="fa-brands fa-facebook-square"></i></a><a href=""><i class="fa-brands fa-twitter-square"></i></a><a href=""><i class="fa-brands fa-linkedin"></i></a></div>
       </div>
-        <div class="contact-form">
-          <h2> Contact Us </h2>
-          <form class="contact" action="https://formspree.io/f/xpzbzagr" method="POST" id="my-form">
-            <input type="text" name="name" class="text-box" placeholder="Your name..." required>
-            <input type="email" name="email" class="text-box" placeholder="Your email..." required>
-            <textarea name="message" rows="5" placeholder="Your message"></textarea>
-            <button type="submit" class="send-btn"> Send </button>
-          </form>
+        <div class="contact-location">
+          <div> <a class="link-map" href="https://www.google.com/maps/place/FMCB+-+Faculdade+de+Medicina+e+Ci%C3%AAncias+Biom%C3%A9dicas/@37.0432312,-7.9719514,17.5z/data=!4m8!1m2!2m1!1sualg+campus+de+gambelas!3m4!1s0x0:0x16208f00e7acab03!8m2!3d37.0450599!4d-7.9709448"><i class="fas fa-map-marker-alt"></i> 8005-139 Faro, Gambelas, Portugal</a> </div>
+          <div class="map-location">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6369.395811616738!2d-7.970228052876629!3d37.04084869908824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab2bb266cd275%3A0x8f43164074111231!2sUniversidade%20do%20Algarve%20-%20Campus%20de%20Gambelas!5e0!3m2!1spt-PT!2spt!4v1655214796325!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
   </main>
@@ -104,26 +107,5 @@ Created by potrace 1.10, written by Peter Selinger 2001-2011
       <a class="logo-three" href=""> <img src="../Images/fmcb-mod.png" alt=""></a>
     </div>
   </footer>
-  <script>
-  var form = document.getElementById("my-form");
-
-   async function handleSubmit(event) {
-     event.preventDefault();
-     var data = new FormData(event.target);
-     fetch(event.target.action, {
-       method: form.method,
-       body: data,
-       headers: {
-           'Accept': 'application/json'
-       }
-     }).then(response => {
-       location.assign("success.html")
-       form.reset()
-     }).catch(error => {
-       location.assign("error.html")
-     });
-   }
-   form.addEventListener("submit", handleSubmit);
-  </script>
   </body>
 </html>
