@@ -73,23 +73,13 @@ nav .poly-q{
 	height: auto;
 }
 
-nav h1{
 
-  font-size: 2.5vw;
-  text-align: center;
-  color: #000;
-	background: white;
-	border: 4px solid #FFD118;
-	/* border-top: 4px solid #FFD118;
-	border-bottom: 4px solid #FFD118; */
-	border-radius: 5px;
-  transition: 1s;
-  width: 20%;
-	font-weight: 300;
-	padding: 5px;
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
 }
 
-nav .return-button{
+nav ul .return-button{
 	color:#000;
   text-decoration: none;
   transition: 0.3s;
@@ -99,7 +89,7 @@ nav .return-button{
 	background: #fff;
 }
 
-nav .return-button:hover{
+nav ul .return-button:hover{
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -111,6 +101,20 @@ nav .return-little{
   text-align: center;
 }
 
+.wrapper h1{
+	font-size: 50px;
+  text-align: center;
+  color: #fff;
+	position: relative;
+	width: 70%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 5px;
+  transition: 1s;
+	font-weight: 300;
+	padding: 5px;
+	margin-bottom: 100px;
+}
 
 .team{
   display: flex;
@@ -377,11 +381,6 @@ footer .logos .logo-three img{
     width: 100px;
   }
 
-	nav h1{
-		font-size: 3.5vw;
-		width: 25%;
-	}
-
   nav .return-little{
     display: block;
 		font-size: 15px;
@@ -400,6 +399,11 @@ footer .logos .logo-three img{
     display: none;
   }
 
+	.wrapper h1{
+		font-size: 30px;
+		width: 100%;
+	}
+
   footer{
   	overflow: hidden;
   }
@@ -407,7 +411,7 @@ footer .logos .logo-three img{
   footer .collumns .first-third{
   	margin: 10px 0px !important;
   	border-left: none !important;
-		border-left: 3px solid #898989;
+		border-right: 3px solid #898989;
   }
 
   footer .collumns .second-third{
@@ -475,10 +479,6 @@ footer .logos .logo-three img{
 		height: auto;
 	}
 
-	nav h1{
-		font-size: 3.5vw;
-		width: 25%;
-	}
 
 	nav .return-little{
 		display: block;
@@ -496,6 +496,11 @@ footer .logos .logo-three img{
 
 	nav .return-button{
 		display: none;
+	}
+
+	.wrapper h1{
+		font-size: 30px;
+		width: 70%;
 	}
 
 	footer{
@@ -569,10 +574,7 @@ footer .logos .logo-three img{
 		height: auto;
 	}
 
-	nav h1{
-		font-size: 3.5vw;
-		width: 25%;
-	}
+
 
 	nav .return-little{
 		display: block;
@@ -591,6 +593,11 @@ footer .logos .logo-three img{
 	nav .return-button{
 		display: none;
 	}
+
+	.wrapper h1{
+		font-size: 50px;
+		width: 70%;
+	}
 }
 
 @media (min-width: 1247px) and (max-width: 1366px){
@@ -601,6 +608,7 @@ footer .logos .logo-three img{
       margin: 15px 0 !important;
     }
 
+
 	}
 
 @media (min-width: 1367px) and (max-width: 1589px){
@@ -610,9 +618,10 @@ footer .logos .logo-three img{
 	    padding: 0 !important;
 	    margin: 15px 0 !important;
 	  }
+
 	}
 
-	@media (min-width: 1590px){
+	@media (min-width: 1590px) and (max-width: 1750px){
 
 	  header h1{
 	    font-size: 27px;

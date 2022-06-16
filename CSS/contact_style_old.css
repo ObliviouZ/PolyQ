@@ -6,6 +6,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -109,14 +110,11 @@ main h1{
 	transform: translateX(-50%);
 	border-radius: 5px;
   transition: 1s;
-  width: 35%;
+  width: 100%;
 	font-weight: 300;
 	padding: 5px;
 	margin-bottom: 50px;
 	margin-top: 20px;
-	/* border-bottom-style: double;
-	border-bottom-width: 6px;
-	border-bottom-color: white; */
 }
 
 
@@ -124,78 +122,116 @@ main h1{
   position: relative;
   width: auto;
   display: flex;
-	justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-decoration: none;
-  margin: 3%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .contact-info{
-	position: relative;
   color: white;
-  max-width: 100%;
+  max-width: 500px;
   line-height: 65px;
-  font-size: 20px;
-	align-items: center;
-	border-bottom: 5px solid white;
+  padding-left: 0px;
+  font-size: 25px;
+	margin-left: 50px;
 }
-
-.contact-info ul{
-	margin-left: 30px;
-}
-
-.contact-info ul li:hover{
-	text-decoration: underline;
-	text-decoration-skip-ink: none;
-}
-
-
 
 .contact-info a{
 	text-decoration: none;
-	margin-right: 20px;
 	color: white;
 }
 
 .contact-info i{
-	font-size: 25px;
+  margin-right: 20px;
+  font-size:25px;
 }
 
-.contact-info .logos a{
-	position: relative;
+.contact-form{
+  max-width: 700px;
+  margin-right: 50px
 }
 
-.contact-info .logos i{
-	position: relative;
-	font-size: 30px;
-	margin-top: 20px;
+.contact-info, .contact-form{
+  flex: 1;
+}
+.contact-info .link-map{
+  text-decoration: none;
+  color: white;
 }
 
-.contact-info .logos i:hover{
-	color: #1DA1F2;
+
+
+.contact-form h2{
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
-.contact-location{
-	margin: 50px 30px 0 30px;
+.contact-form .text-box{
+  background: #BDBFC4;
+  color: #000;
+  border: none;
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
 }
 
-.contact-location a{
-	text-decoration: none;
-	color: white;
-	font-size: 20px;
+.text-box:focus{
+  outline: none;
 }
 
-.contact-location a:hover{
-	text-decoration: underline;
+.contact-form .text-box:first-child{
+  margin-right: 15px;
 }
 
-.map-location{
-	border: 1px solid #ccc;
-	padding: 5px 5px 0 5px;
+.contact-form textarea{
+  background: #BDBFC4;
+  color: #000;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
 }
 
-.map-location iframe{
-	max-width: 100%;
+textarea:focus{
+  outline: none;
+}
+
+.contact-form .send-btn{
+  text-align: center;
+  float: right;
+  background: #3498DB;
+  color: #fff;
+  border: none;
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.contact-form .send-btn:hover{
+  background: #2872CB;
 }
 
 footer{
@@ -347,18 +383,80 @@ footer .logos .logo-three img{
     flex-direction: column;
   }
 
+
+  .contact-info, .contact-form{
+    margin: 30px 50px;
+    font-size: 13px;
+  }
+
+  .contact-form h2{
+    font-size: 30px;
+  }
+  .contact-form .text-box{
+    width: 100%;
+  }
+
 	main h1{
 		font-size: 30px;
+		width: 100%;
 	}
 
 }
 
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.alert-success{
+	display: flex;
+  z-index:1;
+  background: #69F0EA;
+  font-size: 18px;
+  padding: 20px 40px;
+  width: 300px;
+  position: fixed;
+  right: 0;
+  top: 30%;
+  border-left: 8px solid #1DE7DE;
+  border-radius: 4px;
+  animation: 1s ease-out 0s 1 slideInFromRight;
+	transition: 1s;
+}
+
+.alert-error{
+	display: flex;
+  z-index:1;
+  background: #EC8672;
+  font-size: 18px;
+  padding: 20px 40px;
+  width: 310px;
+  position: fixed;
+  right: 0;
+  top: 30%;
+  border-left: 8px solid #E5320E;
+  border-radius: 4px;
+  animation: 1s ease-out 0s 1 slideInFromRight;
+	transition: 1s;
+}
+
+ .alert-success > .fa-solid, .alert-error > .fa-solid{
+	 position: absolute;
+	 font-size: 20px;
+	 left: -8px;
+	 top: 0;
+	 background: white;
+	 padding: 3px;
+	 border-radius: 4px;
+	 cursor: pointer;
+ }
 
 
-
-
-
-@media (max-width: 472px){
+@media (max-width: 500px){
 
 	header{
 		width: 100%;
@@ -452,42 +550,36 @@ footer .logos .logo-three img{
 
 }
 
-@media (min-width: 473px) and (max-width: 622px){
-  *{
-    margin: 0;
-    padding: 0;
-  }
+@media (min-width: 501px) and (max-width: 767px){
+	header{
+		width: 100%;
+	}
+	header h1{
+		font-family: verdana, sans-serif;
+		max-width: 100vw;
+		border-radius: 1px;
+		text-align: center;
+		left: 35px;
+		top: 65px;
+		color: #000;
+		padding: 0;
+		font-size: 1.2em;
+		box-shadow: 5px 5px #F2C20E !important;
+		z-index: 4;
+	}
+	.abcri-logo{
+		width: 90px;
+		height: 50px;
+	}
 
-  header{
-    width: 100%;
-  }
-  header h1{
-    font-family: verdana, sans-serif;
-    max-width: 100vw;
-    border-radius: 1px;
-    text-align: center;
-    left: 35px;
-    top: 65px;
-    color: #000;
-    padding: 0;
-    font-size: 1em;
-    box-shadow: 5px 5px #F2C20E !important;
-    z-index: 4;
-  }
-
-  .abcri-logo{
-    width: 90px;
-    height: 50px;
-  }
-
-  .mngt-logo{
-    position: absolute;
-    width: 110px;
-    height: 50px;
-    right: 20px;
-    margin: 0 !important;
-    padding: 3px;
-  }
+	.mngt-logo{
+		position: absolute;
+		width: 120px;
+		height: 50px;
+		right: 0;
+		margin: 0 !important;
+		padding: 3px;
+	}
 
 	nav .poly-q{
 		width: 100px;
@@ -551,40 +643,26 @@ footer .logos .logo-three img{
 }
 
 
-@media (min-width: 623px) and (max-width: 700px){
-	*{
-		margin: 0;
-		padding: 0;
+@media (min-width: 768px) and (max-width: 1246px){
+	header h1{
+		font-size: 18px;
+		max-width: 300px;
+		padding: 2px !important;
+		top: 20px;
+		right: 10px;
+		box-shadow: 5px 5px #F7B608 !important;
 	}
 
-	header{
-		width: 100%;
-	}
-	header h1{
-		font-family: verdana, sans-serif;
-		max-width: 100vw;
-		border-radius: 1px;
-		text-align: center;
-		left: 35px;
-		top: 65px;
-		color: #000;
-		padding: 0;
-		font-size: 1.2em;
-		box-shadow: 5px 5px #F2C20E !important;
-		z-index: 4;
-	}
 	.abcri-logo{
-		width: 90px;
-		height: 50px;
+		width: 150px;
+		height: auto;
+		margin-bottom: 20px !important;
 	}
 
 	.mngt-logo{
-		position: absolute;
-		width: 120px;
-		height: 50px;
-		right: 0;
-		margin: 0 !important;
-		padding: 3px;
+		width: 210px;
+		height: auto;
+		margin: 20px 0px !important;
 	}
 
 	nav{
@@ -614,39 +692,6 @@ footer .logos .logo-three img{
 	nav .return-button{
 		display: none;
 	}
-}
-
-@media (min-width: 701px) and (max-width: 952px){
-
-  header h1{
-    font-size: 18px;
-    max-width: 300px;
-    padding: 2px !important;
-    top: 20px;
-    right: 10px;
-    box-shadow: 5px 5px #F7B608 !important;
-  }
-
-  .abcri-logo{
-    width: 140px;
-    height: 90px;
-    margin-bottom: 20px !important;
-  }
-
-  .mngt-logo{
-    width: 200px;
-    height: 90px;
-    margin: 20px 0px !important;
-  }
-}
-
-@media (min-width: 953px) and (max-width: 1246px){
-    header h1{
-      max-width: 400px;
-      font-size: 20px;
-      padding: 0 !important;
-      margin: 15px 0 !important;
-    }
 }
 
 @media (min-width: 1247px) and (max-width: 1366px){
