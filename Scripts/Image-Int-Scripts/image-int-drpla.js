@@ -135,4 +135,3 @@ $(document).ready(function() {
     $("#my-interactive-image").interactiveImage(itemsAlmostTablet, options);
   }
 });
-  });
