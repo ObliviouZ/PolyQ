@@ -351,6 +351,13 @@ input[type=checkbox]:checked ~ label > img {
 figcaption{
 	text-align: center;
 	font-size: 1em;
+	margin-bottom: 20px;
+}
+
+.caption-patho{
+	text-align: justify;
+	margin-bottom: 20px;
+	font-size: 1em;
 }
 
 .protein-section .non-interactive img{
@@ -365,6 +372,7 @@ figcaption{
 .table .caption-under{
 	text-align: justify;
 	margin-bottom: 30px;
+	font-size: 1em;
 }
 
 table{
@@ -969,9 +977,20 @@ input[type=checkbox]:checked ~ label > img {
 	transform: scale(1);
 }
 
+figcaption{
+	font-size: 0.8em;
+}
+
+.caption-patho{
+	font-size: 0.8em;
+}
+
+.table .caption-under{
+	font-size: 0.8em;
+}
+
 .int-caption{
-	text-align: center;
-	font-size: 1em;
+	font-size: 0.8em;
 }
 
 .protein-section ul li{
@@ -1216,6 +1235,22 @@ footer .logos .logo-three img{
 		margin: 0 !important;
 	}
 
+	figcaption{
+		font-size: 0.8em;
+	}
+
+	.caption-patho{
+		font-size: 0.8em;
+	}
+
+	.table .caption-under{
+		font-size: 0.8em;
+	}
+
+	.int-caption{
+		font-size: 0.8em;
+	}
+
 	.clinical-section .list-neuronal ul li{
 		font-size: 1em;
 	}
@@ -1388,12 +1423,19 @@ footer .logos .logo-three img{
 	}
 
 	figcaption{
-		text-align: center;
-		font-size: 1.5vw;
+		font-size: 1.3vw;
+	}
+
+	.caption-patho{
+		font-size: 1.3vw;
+	}
+
+	.table .caption-under{
+		font-size: 1.3vw;
 	}
 
 	.int-caption{
-		font-size: 1.5vw;
+		font-size: 1.3vw;
 	}
 
 
@@ -1579,6 +1621,22 @@ footer .logos .logo-three img{
 
 		.clinical-section .list-neuronal ul li{
 			font-size: 1.2vw;
+		}
+
+		figcaption{
+			font-size: 1vw;
+		}
+
+		.caption-patho{
+			font-size: 1vw;
+		}
+
+		.table .caption-under{
+			font-size: 1vw;
+		}
+
+		.int-caption{
+			font-size: 1vw;
 		}
 
 
