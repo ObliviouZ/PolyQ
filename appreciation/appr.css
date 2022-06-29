@@ -170,13 +170,11 @@ main{
 
 
 footer{
-  position: relative;
-  width: 100%;
-  height: 340px;
-  font-size: 15px;
-  bottom: 0;
+  position:relative;
+  bottom:0;
+  width:100%;
   background-color: #e9e9e9;
-  border-top: 1px solid #B8B8B8;
+  border-top: 2px solid rgba(120,120,120,0.1);
 }
 
 footer .collumns{
@@ -187,22 +185,21 @@ footer .collumns{
 }
 
 footer .collumns .first-third{
-  width: auto;
+  width: 120px;
   display: flex;
   border-left: 3px solid #898989;
-  margin: 10px;
+	margin: 10px;
   height: 120px;
-  padding: 10px 20px 20px 20px;
+  padding: 10px 20px;
 }
 
 footer .collumns .first-third ul {
   list-style-type: none;
-  margin-bottom: 10px;
+
 }
 
 footer .collumns .first-third ul li{
-  margin-bottom: 5px;
-  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 footer .collumns .first-third ul li a{
@@ -215,12 +212,12 @@ footer .collumns .first-third ul li:hover > a{
 }
 
 footer .collumns .second-third{
-  width: auto;
+  width: 130px;
   display: flex;
   border-left: 3px solid #898989;
-  margin: 10px;
+	margin: 10px;
   height: 120px;
-  padding: 10px 20px 20px 20px;
+  padding: 10px 20px;
 }
 
 footer .collumns .second-third ul {
@@ -228,8 +225,7 @@ footer .collumns .second-third ul {
 }
 
 footer .collumns .second-third ul li{
-  margin-bottom: 5px;
-  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 footer .collumns .second-third ul li a{
@@ -242,12 +238,12 @@ footer .collumns .second-third ul li:hover > a{
 }
 
 footer .collumns .third-third{
-  width: auto;
+  width: 120px;
   display: flex;
   border-left: 3px solid #898989;
   margin: 10px;
   height: 120px;
-  padding: 10px 20px 20px 20px;
+  padding: 10px 20px;
 }
 
 footer .collumns .third-third ul {
@@ -256,7 +252,6 @@ footer .collumns .third-third ul {
 
 footer .collumns .third-third ul li{
   margin-bottom: 10px;
-  font-size: 1.2em;
 }
 
 footer .collumns .third-third ul li a{
@@ -274,12 +269,15 @@ footer svg{
   width: 150px;
   left: 50%;
   transform: translateX(-50%);
+  margin-top: 20px;
 }
 
 footer p{
   font-family: arial;
   text-align: center;
+  margin-bottom: 5px;
   font-size: 14px;
+
 }
 
 footer .logos{
@@ -412,43 +410,56 @@ footer .logos .logo-three img{
 		width: auto;
 	}
 
-  footer{
-  	overflow: hidden;
+	footer{
 		font-size: 12px;
-  }
+	}
 
-  footer .collumns .first-third{
-  	margin: 10px 0px !important;
-  	border-left: none !important;
-		border-right: 3px solid #898989;
-  }
+	footer .collumns .first-third{
+	  width: 130px;
+		padding: 10px !important;
+	}
 
-  footer .collumns .second-third{
-  	margin: 10px 0px !important;
+	footer .collumns .second-third{
+		width: 130px;
+		margin: 0 !important;
+		padding: 10px !important;
+	}
+
+	footer .collumns .third-third{
+		width: 130px;
+		padding: 10px 5px !important;
+	}
+
+	footer .collumns .first-third{
+		margin: 10px 0px !important;
 		border-left: none !important;
-  }
+	}
 
-  footer .collumns .third-third{
-  	margin: 10px 0px !important;
-  }
+	footer .collumns .second-third{
+		margin: 10px 0px !important;
+	}
 
-  footer .logos .logo-one img{
-    height: auto !important;
-    width: 12vw !important;
-    margin: 5px;
-  }
+	footer .collumns .third-third{
+		margin: 10px 0px !important;
+	}
 
-  footer .logos .logo-two img{
-    height: auto !important;
-    width: 12vw !important;
-    margin: 5px;
-  }
+	footer .logos .logo-one img{
+		height: auto !important;
+		width: 25vw !important;
+		margin: 5px;
+	}
 
-  footer .logos .logo-three img{
-    height: auto !important;
-    width: 18vw !important;
-    margin: 5px;
-  }
+	footer .logos .logo-two img{
+		height: auto !important;
+		width: 30vw !important;
+		margin: 5px;
+	}
+
+	footer .logos .logo-three img{
+		height: auto !important;
+		width: 33vw !important;
+		margin: 5px;
+	}
 
 }
 

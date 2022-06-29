@@ -37,6 +37,8 @@ document.getElementById('myButton').onclick = function() {
                location.assign("../diseases/sca17");
    } else if (input.value.toLowerCase() == "sca17"){
             location.assign("../diseases/sca17");
+   } else if (input.value.toLowerCase() == ""){
+      return alert('Fill the text box.');
    } else {
       return alert('Error. No such disease');
    }
@@ -82,7 +84,10 @@ input.onkeydown = function(e){
                   location.assign("../diseases/sca17");
       } else if (input.value.toLowerCase() == "sca17"){
                location.assign("../diseases/sca17");
-      } else {
+      } else if (input.value.toLowerCase() == ""){
+         return alert('Fill the text box.');
+      }
+       else {
          return alert('Error. No such disease');
       }
       return 1;

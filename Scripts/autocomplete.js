@@ -56,7 +56,7 @@ function autocomplete(inp, arr) {
         addActive(x);
       } else if (e.keyCode == 13) {
         /*If the ENTER key is pressed, prevent the form from being submitted,*/
-        e.preventDefault();
+        // e.preventDefault();   Deactivate for enter click to be able to submit
         if (currentFocus > -1) {
           /*and simulate a click on the "active" item:*/
           if (x) x[currentFocus].click();
