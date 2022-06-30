@@ -186,7 +186,7 @@ main h1{
 }
 
 .contact-location a:hover{
-	text-decoration: underline;
+  color: #4393FF;
 }
 
 .map-location{
