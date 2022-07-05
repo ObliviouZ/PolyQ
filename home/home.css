@@ -1112,6 +1112,13 @@ footer .logos .logo-three img{
 
 }
 
+/* Size for footer until 500px */
+@media (max-width: 500px){
+  footer{
+		font-size: 12px !important;
+	}
+}
+
 @media (min-width: 473px) and (max-width: 622px){
   *{
     margin: 0;
@@ -1392,23 +1399,23 @@ footer .logos .logo-three img{
     margin: 10px 0px !important;
   }
 
-    footer .logos .logo-one img{
-      height: auto !important;
-      width: 20vw !important;
-      margin: 5px;
-    }
+  footer .logos .logo-one img{
+    height: auto !important;
+    width: 20vw !important;
+    margin: 5px;
+  }
 
-    footer .logos .logo-two img{
-      height: auto !important;
-      width: 25vw !important;
-      margin: 5px;
-    }
+  footer .logos .logo-two img{
+    height: auto !important;
+    width: 25vw !important;
+    margin: 5px;
+  }
 
-    footer .logos .logo-three img{
-      height: auto !important;
-      width: 27vw !important;
-      margin: 5px;
-    }
+  footer .logos .logo-three img{
+    height: auto !important;
+    width: 27vw !important;
+    margin: 5px;
+  }
 
   }
 
