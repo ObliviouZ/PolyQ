@@ -786,7 +786,7 @@ footer .logos{
 
 footer .logos .logo-one img{
   height: 50px;
-  width: 100px;
+  width: 90px;
   margin: 5px;
 }
 
@@ -1073,51 +1073,42 @@ footer .logos .logo-three img{
   }
 
   footer{
-    font-size: 12px;
-  }
+		font-size: 12px;
+	}
 
   footer .collumns .first-third{
-      width: 120px !important;
-  }
+		margin: 10px 0px !important;
+		border-left: none !important;
+		border-right: 3px solid #898989;
+    width: 100px !important;
+	}
 
-  footer .collumns .second-third{
-    width: 120px !important;
-  }
+	footer .collumns .second-third{
+		margin: 10px 0px !important;
+		border-left: none !important;
+	}
 
-  footer .collumns .third-third{
-      width: 120px !important;
-  }
+	footer .collumns .third-third{
+		margin: 10px 0px !important;
+	}
 
-  footer .collumns .first-third{
-    margin: 10px 0px !important;
-    border-left: none !important;
-  }
+	footer .logos .logo-one img{
+		height: auto !important;
+		width: 20vw !important;
+		margin: 5px;
+	}
 
-  footer .collumns .second-third{
-    margin: 10px 0px !important;
-  }
+	footer .logos .logo-two img{
+		height: auto !important;
+		width: 25vw !important;
+		margin: 5px;
+	}
 
-  footer .collumns .third-third{
-    margin: 10px 0px !important;
-  }
-
-  footer .logos .logo-one img{
-    height: auto !important;
-    width: 25vw !important;
-    margin: 5px;
-  }
-
-  footer .logos .logo-two img{
-    height: auto !important;
-    width: 30vw !important;
-    margin: 5px;
-  }
-
-  footer .logos .logo-three img{
-    height: auto !important;
-    width: 33vw !important;
-    margin: 5px;
-  }
+	footer .logos .logo-three img{
+		height: auto !important;
+		width: 27vw !important;
+		margin: 5px;
+	}
 
 }
 
@@ -1386,17 +1377,37 @@ footer .logos .logo-three img{
   }
 
 
-    footer .collumns .first-third{
-      margin: 10px 0px !important;
-      border-left: none !important;
+  footer .collumns .first-third{
+    margin: 10px 0px !important;
+    border-left: none !important;
+    border-right: 3px solid #898989;
+  }
+
+  footer .collumns .second-third{
+    margin: 10px 0px !important;
+    border-left: none !important;
+  }
+
+  footer .collumns .third-third{
+    margin: 10px 0px !important;
+  }
+
+    footer .logos .logo-one img{
+      height: auto !important;
+      width: 20vw !important;
+      margin: 5px;
     }
 
-    footer .collumns .second-third{
-      margin: 10px 0px !important;
+    footer .logos .logo-two img{
+      height: auto !important;
+      width: 25vw !important;
+      margin: 5px;
     }
 
-    footer .collumns .third-third{
-      margin: 10px 0px !important;
+    footer .logos .logo-three img{
+      height: auto !important;
+      width: 27vw !important;
+      margin: 5px;
     }
 
   }
@@ -1671,17 +1682,19 @@ footer .logos .logo-three img{
     }
 
     footer .collumns .first-third{
-      margin: 10px 0px !important;
-      border-left: none !important;
-    }
+  		margin: 10px 0px !important;
+  		border-left: none !important;
+  		border-right: 3px solid #898989;
+  	}
 
-    footer .collumns .second-third{
-      margin: 10px 0px !important;
-    }
+  	footer .collumns .second-third{
+  		margin: 10px 0px !important;
+  		border-left: none !important;
+  	}
 
-    footer .collumns .third-third{
-      margin: 10px 0px !important;
-    }
+  	footer .collumns .third-third{
+  		margin: 10px 0px !important;
+  	}
 }
 
 

@@ -134,7 +134,7 @@ nav .return-little{
   margin: 100px;
   margin-top: 80px;
   height: auto;
-  width: 300px;
+  max-width: 350px;
   padding: 20px;
   line-height: 20px;
   color: #8e8b8b;
@@ -327,7 +327,7 @@ footer .logos{
 
 footer .logos .logo-one img{
   height: 50px;
-  width: 100px;
+  width: 90px;
   margin: 5px;
 }
 
@@ -417,35 +417,36 @@ footer .logos .logo-three img{
     font-size: 13px;
   }
 
-  footer .collumns .first-third{
-    margin: 10px 0px !important;
-    border-left: none !important;
-		padding: 0 0 0 20px !important;
-  }
+	footer .collumns .first-third{
+		margin: 10px 0px !important;
+		border-left: none !important;
+		border-right: 3px solid #898989;
+	}
 
-  footer .collumns .second-third{
-    margin: 10px 0px !important;
-  }
+	footer .collumns .second-third{
+		margin: 10px 0px !important;
+		border-left: none !important;
+	}
 
-  footer .collumns .third-third{
-    margin: 10px 0px !important;
-  }
+	footer .collumns .third-third{
+		margin: 10px 0px !important;
+	}
 
   footer .logos .logo-one img{
     height: auto !important;
-    width: 25vw !important;
+    width: 20vw !important;
     margin: 5px;
   }
 
   footer .logos .logo-two img{
     height: auto !important;
-    width: 30vw !important;
+    width: 25vw !important;
     margin: 5px;
   }
 
   footer .logos .logo-three img{
     height: auto !important;
-    width: 33vw !important;
+    width: 27vw !important;
     margin: 5px;
   }
 
@@ -516,15 +517,15 @@ footer .logos .logo-three img{
 	}
 
 	footer .collumns .first-third{
-  	margin: 10px 0px !important;
-  	border-left: none !important;
-		border-right: 3px solid #898989;
-  }
-
-  footer .collumns .second-third{
-  	margin: 10px 0px !important;
+		margin: 10px 0px !important;
 		border-left: none !important;
-  }
+		border-right: 3px solid #898989;
+	}
+
+	footer .collumns .second-third{
+		margin: 10px 0px !important;
+		border-left: none !important;
+	}
 
 	footer .collumns .third-third{
 		margin: 10px 0px !important;

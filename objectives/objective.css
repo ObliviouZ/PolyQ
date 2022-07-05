@@ -295,7 +295,7 @@ footer .logos{
 
 footer .logos .logo-one img{
   height: 50px;
-  width: 100px;
+  width: 90px;
   margin: 5px;
 }
 
@@ -380,10 +380,12 @@ footer .logos .logo-three img{
 	footer .collumns .first-third{
 		margin: 10px 0px !important;
 		border-left: none !important;
+		border-right: 3px solid #898989;
 	}
 
 	footer .collumns .second-third{
 		margin: 10px 0px !important;
+		border-left: none !important;
 	}
 
 	footer .collumns .third-third{
@@ -392,19 +394,19 @@ footer .logos .logo-three img{
 
 	footer .logos .logo-one img{
 		height: auto !important;
-		width: 25vw !important;
+		width: 20vw !important;
 		margin: 5px;
 	}
 
 	footer .logos .logo-two img{
 		height: auto !important;
-		width: 30vw !important;
+		width: 25vw !important;
 		margin: 5px;
 	}
 
 	footer .logos .logo-three img{
 		height: auto !important;
-		width: 33vw !important;
+		width: 27vw !important;
 		margin: 5px;
 	}
 
@@ -485,19 +487,19 @@ footer .logos .logo-three img{
 
 	footer .logos .logo-one img{
 		height: auto !important;
-		width: 12vw !important;
+		width: 15vw !important;
 		margin: 5px;
 	}
 
 	footer .logos .logo-two img{
 		height: auto !important;
-		width: 12vw !important;
+		width: 20vw !important;
 		margin: 5px;
 	}
 
 	footer .logos .logo-three img{
 		height: auto !important;
-		width: 18vw !important;
+		width: 23vw !important;
 		margin: 5px;
 	}
 }
