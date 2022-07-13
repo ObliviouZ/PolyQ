@@ -16,7 +16,7 @@ body{
 
 header{
   position: relative;
-  background-image: linear-gradient(rgba(229, 229, 228, 0.65), rgba(225, 225, 223, 0.85)), url(/Images/index-bg.jpg);
+  background-image: linear-gradient(rgba(229, 229, 228, 0.65), rgba(225, 225, 223, 0.85)), url(/PolyQ/Images/index-bg.jpg);
   background-position: center;
   background-size: cover;
   height: 120px;
@@ -285,10 +285,10 @@ main{
 
   }
 
-  @media (min-width: 1590px){
+  @media (min-width: 1590px) and (max-width: 1750px){
 
     header h1{
-      font-size: 27px;
+      font-size: 26px;
     }
 }
 

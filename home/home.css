@@ -316,7 +316,6 @@ main h4::after {
 }
 
 
-
 .side-text h2{
   font-size: 40px;
   text-align: center;
@@ -2052,10 +2051,6 @@ footer .logos .logo-three img{
 
 @media (min-width: 1590px){
 
-  header h1{
-    font-size: 27px;
-  }
-
   .autocomplete-items{
     width: 98.5%;
   }
@@ -2067,5 +2062,12 @@ footer .logos .logo-three img{
   .container .side-text{
     width: calc(100% - 930px) !important;
     height: 500px;
+  }
+
+}
+
+@media (min-width: 1590px) and (max-width: 1750px){
+  header h1{
+    font-size: 26px;
   }
 }
