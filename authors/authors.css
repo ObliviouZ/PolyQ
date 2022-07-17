@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Genos:ital,wght@0,100;0,300;0,600;1,400&family=PT+Sans+Narrow:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;500;600;700&family=Saira+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Genos:ital,wght@0,100;0,300;0,600;1,400&family=PT+Sans+Narrow:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 
 *{
@@ -33,7 +31,7 @@ header h1{
   font-family: verdana, sans-serif;
   letter-spacing: 2px;
   position: absolute;
-  max-width: 1200px;
+  max-width: 1220px;
   top: 10px;
   right: 30px;
   border-radius: 1px;
@@ -41,7 +39,7 @@ header h1{
   text-align: center;
   color: #000;
   background-color: rgba(242, 242, 242, 0.8);
-  font-size: 1.9em;
+  font-size: 2em;
   box-shadow: 10px 10px #F2C20E;
   z-index: 4;
 }
@@ -150,7 +148,7 @@ nav .return-little{
 }
 
 .team .team_members p.role{
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   margin: 12px 0;
 }
@@ -192,12 +190,21 @@ nav .return-little{
 }
 
 .team_members ul li{
-  font-size:30px;
-  width: 30px;
-  height: 30px;
-  margin: 10px;
+  font-size:40px;
+  width: 40px;
+  height: 40px;
+  margin: 10px 20px 0px 20px;
   display: inline-block;
   transition: 0.5s;
+}
+
+.team_members a:hover .color-change{
+	color: black;
+}
+
+
+.team_members .info{
+	text-align: justify;
 }
 
 
