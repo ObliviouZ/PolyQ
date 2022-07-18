@@ -8,9 +8,7 @@
     <link rel="shortcut icon" href="../Images/image1.ico"/>
     <link rel="stylesheet" href="home.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+    <link rel="stylesheet" href="aos.css"/>
   </head>
     <body>
       <header>
@@ -139,7 +137,7 @@
               <div class="back-face">
                 <img src="../Images/biology-dna.jpg" />
                 <p>
-                  Go to Huntington's Disease Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                  Go to HD page<br><span><img src="../Images/arrow-right.png"/></span>
                 </p>
               </div>
               </div>
@@ -155,7 +153,7 @@
               <div class="back-face">
                 <img src="../Images/biology-dna.jpg" />
                 <p>
-                  Go to DRPLA Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                  Go to DRPLA page<br><span><img src="../Images/arrow-right.png"/></span>
                 </p>
               </div>
               </div>
@@ -171,7 +169,7 @@
               <div class="back-face">
                 <img src="../Images/biology-dna.jpg" />
                 <p>
-                  Go to SBMA Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                  Go to SBMA page<br><span><img src="../Images/arrow-right.png"/></span>
                 </p>
               </div>
               </div>
@@ -187,7 +185,7 @@
               <div class="back-face">
                 <img src="../Images/biology-dna.jpg" />
                 <p>
-                  Go to SCA1 Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                  Go to SCA1 page<br><span><img src="../Images/arrow-right.png"/></span>
                 </p>
               </div>
               </div>
@@ -203,7 +201,7 @@
               <div class="back-face">
                 <img src="../Images/biology-dna.jpg" />
                 <p>
-                  Go to SCA2 Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                  Go to SCA2 page<br><span><img src="../Images/arrow-right.png"/></span>
                 </p>
               </div>
               </div>
@@ -219,7 +217,7 @@
               <div class="back-face">
                 <img src="../Images/biology-dna.jpg" />
                 <p>
-                  Go to SCA3 Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                  Go to SCA3 page<br><span><img src="../Images/arrow-right.png"/></span>
                 </p>
               </div>
               </div>
@@ -235,7 +233,7 @@
               <div class="back-face">
                 <img src="../Images/biology-dna.jpg" />
                 <p>
-                  Go to SCA6 Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                  Go to SCA6 page<br><span><img src="../Images/arrow-right.png"/></span>
                 </p>
               </div>
               </div>
@@ -251,7 +249,7 @@
               <div class="back-face">
                 <img src="../Images/biology-dna.jpg" />
                 <p>
-                  Go to SCA7 Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                  Go to SCA7 page<br><span><img src="../Images/arrow-right.png"/></span>
                 </p>
               </div>
               </div>
@@ -267,7 +265,7 @@
               <div class="back-face">
                 <img src="../Images/biology-dna.jpg" />
                 <p>
-                  Go to SCA17 Page<br><span><i class="fa-solid fa-arrow-right"></i></span>
+                  Go to SCA17 page<br><span><img src="../Images/arrow-right.png"/></span>
                 </p>
               </div>
               </div>
@@ -339,7 +337,7 @@ Created by potrace 1.10, written by Peter Selinger 2001-2011
   <script src="../Scripts/autocomplete.js"></script>
   <script src="../Scripts/search-button.js"></script>
   <script src="../Scripts/new-slide.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="../Scripts/aos.js"></script>
    <script>
      AOS.init();
    </script>
@@ -367,9 +365,30 @@ Created by potrace 1.10, written by Peter Selinger 2001-2011
      btnAllLeft.onclick = function() {
         document.getElementById('slider-horizontal').scrollLeft -= 2400;
           };
-
-
    </script>
+   <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "../Scripts/firebase-app.js";
+  import { getAnalytics } from "../Scripts/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDAlkD1zVu9_dlfWR0c-kix0t16YjEMEYw",
+    authDomain: "polyq-356409.firebaseapp.com",
+    projectId: "polyq-356409",
+    storageBucket: "polyq-356409.appspot.com",
+    messagingSenderId: "14337906920",
+    appId: "1:14337906920:web:1896606ba7ec0e491e515d",
+    measurementId: "G-KL5N79MRYQ"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 
 
 </html>

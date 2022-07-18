@@ -571,22 +571,24 @@ main h4::after {
   position: absolute;
   text-align: center;
   top: 120px;
-  width: 60%;
+  width: 50%;
   left: 50%;
   transform: translateX(-50%);
   font-weight: bold;
   background: rgba(255, 255, 255, 0.9);
   padding: 5px;
   border-radius: 3px;
-  text-decoration: underline;
+  border: 2px solid #F7B608;
+  /* text-decoration: underline;
   text-decoration-color: #F7B608;
   text-decoration-skip-ink: none;
-  text-decoration-thickness: 4px;
+  text-decoration-thickness: 3px; */
   opacity: 1;
 }
 
-.back-face span{
-  font-size: 20px;
+.back-face span img{
+  width: 30px;
+  height: auto;
   opacity: 1;
 }
 
